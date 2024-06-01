@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Gagan Suman</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather for Cats</h1>
+        <div class="search">
+            <input type="text" id="city" placeholder="City Name" value="faridabad" >
+            <button onclick="GetCityName()"><i class="ri-search-line"></i></button>
+        </div>
+        <img src="" id="weather-img">
+        <h3 class="temp"></h3>
+        <h2 id="city-name">Search City In Search Box</h2>
+
+        <div class="bottom">
+            <div class="bottom-side">
+                <img src="images/wind.png" >
+                <div class="wind">
+                    <h3>Wind Speed</h3>
+                    <h4 id="wind-speed"></h4>
+                </div>
+            </div>
+            <div class="bottom-side">
+                <img src="images/humidity.png">
+                <div class="humidity">
+                    <h3>Humidity</h3>
+                    <h4 id="humidity-percentage"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="weather.js"></script>
+</body>
+</html>
